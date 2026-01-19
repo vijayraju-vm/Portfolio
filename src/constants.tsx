@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
     title: 'IMDB Movies Analysis',
     problem: 'Large movie datasets make it hard to surface rating drivers and genre trends.',
     insight: 'Cleaned and analyzed IMDB data to surface top predictors of ratings and temporal genre trends.',
-    tools: ['Python', 'Pandas', 'Seaborn', 'Jupyter'],
+    tools: ['SQL', "Excel", "Orange"],
     githubUrl: 'https://github.com/vijayraju-vm/IMDB-Movies-Analysis',
     imageUrl: 'https://picsum.photos/seed/imdb/800/600',
     category: 'Analysis'
@@ -39,7 +39,7 @@ export const PROJECTS: Project[] = [
     title: 'Customer Segmentation Analysis',
     problem: 'One-size-fits-all marketing reduces campaign effectiveness across diverse customer bases.',
     insight: 'Clustering and profiling revealed 4 high-value segments enabling targeted strategies.',
-    tools: ['Python', 'Scikit-Learn', 'PCA', 'Tableau'],
+    tools: ['Python', 'PowerBI', 'MySQL'],
     githubUrl: 'https://github.com/vijayraju-vm/Customer-Segmentation-Analysis',
     imageUrl: 'https://picsum.photos/seed/segmentation/800/600',
     category: 'Analysis'
@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
     title: 'Customer Data Analysis',
     problem: 'Incomplete and inconsistent customer profiles reduce personalization and reporting accuracy.',
     insight: 'A focused data-cleaning and feature engineering pipeline improved model input quality and downstream insights.',
-    tools: ['Python', 'Pandas', 'SQL'],
+    tools: ['Python', 'PowerBI', 'SQL'],
     githubUrl: 'https://github.com/vijayraju-vm/Customer-Data-Analysis',
     imageUrl: 'https://picsum.photos/seed/customer/800/600',
     category: 'Analysis'
@@ -92,6 +92,5 @@ export const NAVIGATION_LINKS = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Lab', href: '#lab' },
   { name: 'Contact', href: '#contact' },
 ];

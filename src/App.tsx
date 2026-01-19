@@ -17,7 +17,7 @@ import InteractiveBackground from './components/Background';
 import GlassCard from './components/GlassCard';
 import SkillCard from './components/SkillCard';
 import ProjectCard from './components/ProjectCard';
-import { SKILLS, PROJECTS, LAB_EXPERIMENTS, NAVIGATION_LINKS } from '../constants';
+import { SKILLS, PROJECTS, LAB_EXPERIMENTS, NAVIGATION_LINKS } from './constants';
 
 const App: React.FC = () => {
   const [activeNav, setActiveNav] = useState('home');
@@ -206,7 +206,7 @@ const App: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-white">Certified Data Analyst</h4>
-                    <p className="text-sm text-slate-500 italic">Advanced Analytics Institute</p>
+                    <p className="text-sm text-slate-500 italic">DataMites Institute</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -215,7 +215,7 @@ const App: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-white">Real-time Analytics Internship</h4>
-                    <p className="text-sm text-slate-500 italic">FinTech Solutions Group</p>
+                    <p className="text-sm text-slate-500 italic">DataMites Institute</p>
                   </div>
                 </div>
               </div>
@@ -231,8 +231,7 @@ const App: React.FC = () => {
               <p className="text-slate-500 text-lg">The tools I use to dismantle complex problems.</p>
             </div>
             <div className="flex gap-4">
-              <span className="px-4 py-2 rounded-lg glass border border-white/10 text-xs font-bold text-slate-400">Total Projects: 24+</span>
-              <span className="px-4 py-2 rounded-lg glass border border-white/10 text-xs font-bold text-slate-400">Avg Insight Accuracy: 96%</span>
+              <span className="px-4 py-2 rounded-lg glass border border-white/10 text-xs font-bold text-slate-400">Total Projects: 4</span>
             </div>
           </div>
 
@@ -254,46 +253,6 @@ const App: React.FC = () => {
             {PROJECTS.map(project => (
               <ProjectCard key={project.id} project={project} />
             ))}
-          </div>
-        </section>
-
-        {/* Lab / Experiments */}
-        <section id="lab" className="relative scroll-mt-32">
-          <div className="absolute -inset-10 bg-gradient-to-r from-blue-600/5 to-purple-600/5 rounded-[4rem] blur-3xl -z-10" />
-          
-          <div className="grid lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-4 space-y-6">
-              <div className="p-3 w-fit rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20">
-                <BrainCircuit className="w-8 h-8 text-blue-400" />
-              </div>
-              <h2 className="text-4xl font-bold text-white">Learning Lab</h2>
-              <p className="text-slate-400 leading-relaxed">
-                This is my sandbox. Where I experiment with new libraries, test theories, and document my continuous learning journey.
-              </p>
-              <button className="flex items-center gap-2 text-blue-400 font-bold hover:gap-4 transition-all">
-                Explore the Notebooks <ArrowRight size={20} />
-              </button>
-            </div>
-            
-            <div className="lg:col-span-8 grid sm:grid-cols-2 gap-4">
-              {LAB_EXPERIMENTS.map((exp, i) => (
-                <GlassCard key={exp.title} className="hover:border-blue-500/30">
-                  <div className="flex justify-between items-start mb-4">
-                    <span className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em]">{exp.date}</span>
-                    <div className="flex gap-1">
-                      {exp.tags.map(t => (
-                        <span key={t} className="px-2 py-0.5 rounded-md bg-blue-500/10 text-[10px] text-blue-300 font-bold">{t}</span>
-                      ))}
-                    </div>
-                  </div>
-                  <h3 className="text-lg font-bold text-white mb-2">{exp.title}</h3>
-                  <p className="text-sm text-slate-400 mb-4">{exp.description}</p>
-                  <button className="text-xs font-bold text-blue-400/80 hover:text-blue-400 flex items-center gap-1 group">
-                    Read Post <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </button>
-                </GlassCard>
-              ))}
-            </div>
           </div>
         </section>
 
