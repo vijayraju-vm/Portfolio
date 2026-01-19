@@ -1,0 +1,8 @@
+{
+  "name": "DataNexus Portfolio",
+  "description": "A premium, glossy, and highly animated portfolio for a professional Data Analyst, featuring glassmorphism, smooth transitions, and data-centric visual storytelling.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
