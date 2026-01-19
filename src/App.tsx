@@ -17,7 +17,7 @@ import InteractiveBackground from './components/Background';
 import GlassCard from './components/GlassCard';
 import SkillCard from './components/SkillCard';
 import ProjectCard from './components/ProjectCard';
-import { SKILLS, PROJECTS, LAB_EXPERIMENTS, NAVIGATION_LINKS } from './constants';
+import { SKILLS, PROJECTS, LAB_EXPERIMENTS, NAVIGATION_LINKS } from '../constants';
 
 const App: React.FC = () => {
   const [activeNav, setActiveNav] = useState('home');
@@ -142,7 +142,8 @@ const App: React.FC = () => {
                 <ChevronRight className="group-hover:translate-x-1 transition-transform" />
               </button>
               <a
-                href="/Resume.pdf"
+                href="/Resume.pdf" /* Points to public/Resume.pdf */
+                download="Bakka_Vijay_Raju_Resume.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 rounded-full glass border border-white/10 text-white font-bold text-lg hover:bg-white/10 transition-all inline-flex items-center justify-center"
@@ -162,7 +163,7 @@ const App: React.FC = () => {
               <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600 via-violet-600 to-purple-600 rounded-[2.5rem] blur-2xl opacity-40 group-hover:opacity-60 transition-opacity animate-glow" />
               <div className="relative w-80 h-96 lg:w-96 lg:h-[32rem] rounded-[2rem] overflow-hidden border-2 border-white/10 glass">
                 <img 
-                  src="/Profile_Pic.png" 
+                  src="/Profile_Pic.png"  /* This points directly to public/Profile_Pic.png */
                   alt="Professional Profile"
                   className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
                 />

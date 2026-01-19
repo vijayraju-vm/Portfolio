@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Skill } from '../types';
+import { Skill } from '../../types';
 import GlassCard from './GlassCard';
 import { Database, Code2, BarChart3, Terminal, Cpu, Layout, FileSpreadsheet, Search, Github } from 'lucide-react';
 

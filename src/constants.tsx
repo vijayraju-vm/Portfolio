@@ -10,7 +10,7 @@ import {
   LineChart, 
   Table as TableIcon 
 } from 'lucide-react';
-import { Skill, Project, LabExperiment } from './types';
+import { Skill, Project, LabExperiment } from '../types';
 
 export const SKILLS: Skill[] = [
   { name: 'Python', icon: 'python', category: 'Core', description: 'Pandas, NumPy, Scikit-learn', proficiency: 90 },
